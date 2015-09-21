@@ -444,8 +444,6 @@ Copy assets and config.rb into your theme folder.
 
 ## CSS-isme markup guidelines
 
-At fffunction we write our css using the following rules. If you want to follow our lead, then the below should help.
-
 - No ID’s for styling
 - Write in all lowercase and separate each word with a dash (.global-header)
 - Use 4space tab indenting. Indent as you go
