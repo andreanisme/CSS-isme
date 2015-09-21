@@ -2,6 +2,8 @@
 
 A quick start template for (hopefully) better websites. "Karena koding adalah harapan."
 
+![CSS-isme](https://c1.staticflickr.com/1/720/21400091239_0ff5424eb0_h.jpg)
+
 ## Overview
 
 CSS-isme is a set of default rules and styles that starts everything I do at [andreanisme.co](http://andreanisme.co) in a consistent manner. 
