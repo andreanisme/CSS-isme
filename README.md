@@ -87,7 +87,7 @@ Contains default form elements and standard styling. If you’re not using forms
 
 ### grid.scss
 
-Contains the main functionality of the CSS-isme grid system. This file is where you add your columns and define your syntax for the surrounding ‘.rows’ in your content. We’ll touch on how to use this later.
+Contains the main functionality of the CSS-isme grid system. This file is where you add your columns and define your syntax for the surrounding ‘.rows’ in your content. I’ll touch on how to use this later.
 
 --- 
 
@@ -126,7 +126,7 @@ You’ll see our default breakpoints that I’ve used in the demo as a (somewhat
 
 This set up allows you to define your syntax for your breakpoints as you wish. It also includes some variables that are required if using the CSS-isme grid.
 
-You’ll notice we’ve used alphabetical viewport names, to indicate where in the mobile first set-up they come. This way I can avoid using names such as tablet or mobile, which are too descriptive of a size.
+You’ll notice I’ve used alphabetical viewport names, to indicate where in the mobile first set-up they come. This way I can avoid using names such as tablet or mobile, which are too descriptive of a size.
 
 ##### Open up mixins.scss
 
@@ -385,7 +385,7 @@ Have a play.
 
 ## Compass rhythm and leading
 
-CSS-isme tries to make leading and spacing as easy as possible, whilst writing accessible code. We’re not mad keen on tricky maths, but I like to write in ems. Luckily, compass can handle this for us with a few smart defaults, tricks and a few commands. Here’s how:
+CSS-isme tries to make leading and spacing as easy as possible, whilst writing accessible code. I not mad keen on tricky maths, but I like to write in ems. Luckily, compass can handle this for us with a few smart defaults, tricks and a few commands. Here’s how:
 
 #### In settings.scss
 
@@ -393,7 +393,7 @@ CSS-isme tries to make leading and spacing as easy as possible, whilst writing a
 This defaults to 16px and, generally this works well in your calculations so you shouldn’t need to change this (you can if you like).
 
 ##### Set up your base-line-height. 
-To prevent oddly spaced leading and large gaps between lines, we like to use a smaller measure, as you might do in print design. Something like 6px works well. Later, you’ll use multiples of this baseline to creating your leading and spacing. 
+To prevent oddly spaced leading and large gaps between lines, I like to use a smaller measure, as you might do in print design. Something like 6px works well. Later, you’ll use multiples of this baseline to creating your leading and spacing. 
 
 #### In module-typeset.scss or typography.scss
 
@@ -433,7 +433,7 @@ Say – for example you’d like to add a pixel value to a media query, but you�
 	
 	em-base(#px) // converts the value to pixels, based on the base-line-height.
 
-We also tend to like these for fine-tuning elements such as letter spacing. 
+I also tend to like these for fine-tuning elements such as letter spacing. 
 
 
 #### Using with Wordpress
@@ -452,5 +452,5 @@ Copy assets and config.rb into your theme folder.
 - Use @extend and @mixin to keep code nice and lean
 
 ## The legal bit
-Use how you want. We’d love to see how it’s being used, so do tell. 
+Use how you want. I’d love to see how it’s being used, so do tell. 
 
