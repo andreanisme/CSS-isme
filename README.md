@@ -1,6 +1,6 @@
 # CSS-isme
 
-A quick start template for (hopefully) better websites.
+A quick start template for (hopefully) better websites. Karena koding adalah harapan.
 
 ## Overview
 
