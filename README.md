@@ -4,7 +4,7 @@ A quick start template for (hopefully) better websites. Karena koding adalah har
 
 ## Overview
 
-CSS-isme is a set of default rules and styles that starts everything we do at [andreanisme.co](http://andreanisme.co) in a consistent manner. 
+CSS-isme is a set of default rules and styles that starts everything I do at [andreanisme.co](http://andreanisme.co) in a consistent manner. 
 
 It’s not a boilerplate or a theme.
 
@@ -20,7 +20,7 @@ If you're ready to go, then simply delete the demo files and folders from assets
 
 ## Getting Sass(y) with Compass
 
-CSS-isme uses the power of [Sass](http://Sass-lang.com) via SCSS and [Compass](http://compass-style.org) to create flexible stylesheets that we can re-use and add to over time.
+CSS-isme uses the power of [Sass](http://Sass-lang.com) via SCSS and [Compass](http://compass-style.org) to create flexible stylesheets that I can re-use and add to over time.
 
 Compass is a library of common elements, equations and helper styles that is kept up-to-date by a community of developers and is useful for rapid development and leaner code.
 
@@ -93,9 +93,9 @@ Contains the main functionality of the CSS-isme grid system. This file is where 
 
 ## Modules and globbing
 
-We've included a modules folder with an example `_navigation.scss` module. We like to chunk everything up into little bits in a BEM/SMACSS style, and this example structure is how we do so. 
+I've included a modules folder with an example `_navigation.scss` module. I like to chunk everything up into little bits in a BEM/SMACSS style, and this example structure is how I do so. 
 
-We also use Sass globbing to pull all the files in from this folder with a `*` wildcard - if globbing is giving you issues, then you can add each module in maually in the base css file.
+I also use Sass globbing to pull all the files in from this folder with a `*` wildcard - if globbing is giving you issues, then you can add each module in maually in the base css file.
 
 To install sass-globbing:
 
@@ -105,13 +105,13 @@ To install sass-globbing:
 
 ## Working with breakpoints
 
-We wanted to make things a little easier. 
+I wanted to make things a little easier. 
 
-We believe breakpoints should exist where design breaks. This means there maybe many or few, depending on your needs, and they should appear where you need them, not at device sizes. To do this, we’ve included three mixins and some variables, to allow you to configure things as you please.
+I believe breakpoints should exist where design breaks. This means there maybe many or few, depending on your needs, and they should appear where you need them, not at device sizes. To do this, I’ve included three mixins and some variables, to allow you to configure things as you please.
 
 ##### Open up settings.scss
 
-You’ll see our default breakpoints that we’ve used in the demo as a (somewhat extreme) example.  It looks a little like this:
+You’ll see our default breakpoints that I’ve used in the demo as a (somewhat extreme) example.  It looks a little like this:
 	
 	$a-vp								: 300px;	// first viewport 
 	$b-vp								: 420px;	// up one
@@ -126,7 +126,7 @@ You’ll see our default breakpoints that we’ve used in the demo as a (somewha
 
 This set up allows you to define your syntax for your breakpoints as you wish. It also includes some variables that are required if using the CSS-isme grid.
 
-You’ll notice we’ve used alphabetical viewport names, to indicate where in the mobile first set-up they come. This way we can avoid using names such as tablet or mobile, which are too descriptive of a size.
+You’ll notice we’ve used alphabetical viewport names, to indicate where in the mobile first set-up they come. This way I can avoid using names such as tablet or mobile, which are too descriptive of a size.
 
 ##### Open up mixins.scss
 
@@ -148,7 +148,7 @@ To use simply include the mixin within a parent element in your code. For exampl
 		}
 	}
 
-Above we have told the mixin to show a minimum width of our second breakpoint ($b-vp) when the viewport reaches this width. 
+Above I have told the mixin to show a minimum width of our second breakpoint ($b-vp) when the viewport reaches this width. 
 
 That’s it. Have a play and see how you get on.
 
@@ -156,7 +156,7 @@ That’s it. Have a play and see how you get on.
 
 ## CSS-isme grid system
 
-The grid system works a little differently than other grids you may have used in the past. That’s not always a bad thing, but as we always, use what is most appropriate for each project. CSS-isme works best for simple grids layouts that require fine grain control at multiple breakpoints.
+The grid system works a little differently than other grids you may have used in the past. That’s not always a bad thing, but as I always, use what is most appropriate for each project. CSS-isme works best for simple grids layouts that require fine grain control at multiple breakpoints.
 
 If you need an un-equal grid, multiple layer nesting or something more complex, then perhaps it’s not for you.
 
@@ -166,7 +166,7 @@ To allow for scalability and user-additions, that can be undertaken in an iterat
 
 ### How it works
 
-CSS-isme works by combining box-sizing:border-box and padding to space elements, and percentages to define column widths. As box-sizing:border-box considers padding as part of the box model, and not additional to it, we can use easy mathematics to generate our grid columns.
+CSS-isme works by combining box-sizing:border-box and padding to space elements, and percentages to define column widths. As box-sizing:border-box considers padding as part of the box model, and not additional to it, I can use easy mathematics to generate our grid columns.
 
 In short CSS-isme can do two things.
 + Provide percentage with columns with no gutters, based on the amount of columns. You can then use internal padding to space elements apart.
@@ -191,7 +191,7 @@ You include this mixin like so, where # is the number of columns you need
 	
 	@include grid_columns(#); // Eg 12
 
-This mixin generates percentages widths, based on the amount of columns we define in total (eg 12), and their individual spans as a multiple there of (eg 4 columns of 12). This looks a little like this when rendered.
+This mixin generates percentages widths, based on the amount of columns I define in total (eg 12), and their individual spans as a multiple there of (eg 4 columns of 12). This looks a little like this when rendered.
 
 	.colspan12-4 // Span four columns of a 12 column grid
 
@@ -242,11 +242,11 @@ This defines our css class hooks. For added flexibility, the grid is divided int
 
 	.colspan 
 
-Targets all items that have a class that matches ‘colspan’. This gets the elements width (defaults to 100%) and nothing more. When we define as specific colspan, this is over-ridden (eg colspan12-4).
+Targets all items that have a class that matches ‘colspan’. This gets the elements width (defaults to 100%) and nothing more. When I define as specific colspan, this is over-ridden (eg colspan12-4).
 	
 	.as-grid
 
-Targets all items with a class of ‘as-grid’. Used in combination with ‘.colspan’ we take the width it defines as tell it to float, to form a grid item.
+Targets all items with a class of ‘as-grid’. Used in combination with ‘.colspan’ I take the width it defines as tell it to float, to form a grid item.
 	
 	.with-gutter
 
@@ -263,7 +263,7 @@ Using these elements might look something like
 
 In this file you’ll add your columns to breakpoints within a parent element, to set-up a flexible grid system.
 
-Using our respond-to mixin (as mentioned above) and our breakpoints for the settings file, we can build a mobile first grid system.
+Using our respond-to mixin (as mentioned above) and our breakpoints for the settings file, I can build a mobile first grid system.
 
 For example:
 	
@@ -385,7 +385,7 @@ Have a play.
 
 ## Compass rhythm and leading
 
-CSS-isme tries to make leading and spacing as easy as possible, whilst writing accessible code. We’re not mad keen on tricky maths, but we like to write in ems. Luckily, compass can handle this for us with a few smart defaults, tricks and a few commands. Here’s how:
+CSS-isme tries to make leading and spacing as easy as possible, whilst writing accessible code. We’re not mad keen on tricky maths, but I like to write in ems. Luckily, compass can handle this for us with a few smart defaults, tricks and a few commands. Here’s how:
 
 #### In settings.scss
 
@@ -454,4 +454,3 @@ Copy assets and config.rb into your theme folder.
 ## The legal bit
 Use how you want. We’d love to see how it’s being used, so do tell. 
 
-Please don’t sell CSS-isme wholesale (as is), as that’s just not very nice. If we find out this is the case, we’ll send around a big smelly dog to sit on all your soft furnishings. You have been warned.
